@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<toc>
+  <topic label="Series 2600B command reference" href="2601B-PULSE_command_reference.htm">
+    <topic label="Remote commands" href="2601B-PULSE_introduction_to_TSP_operation.htm">
+      <topic label="Introduction to TSP operation" href="17029.htm">
+        <topic label="Controlling the instrument by sending individual command messages" href="17268.htm">
+          <topic label="Functions" href="13811.htm"/>
+          <topic label="Attributes" href="492.htm">
+            <topic label="" href="492.htm#o493"/>
+            <topic label="" href="492.htm#o494"/>
+          </topic>
+        </topic>
+        <topic label="Queries" href="368.htm"/>
+        <topic label="Information on scripting and programming" href="17789.htm"/>
+      </topic>
+      <topic label="About TSP commands" href="13401.htm">
+        <topic label="Beeper control" href="14127.htm"/>
+        <topic label="Bit manipulation and logic operations" href="11382.htm"/>
+        <topic label="Calibration" href="92710.htm"/>
+        <topic label="Data queue" href="14653.htm"/>
+        <topic label="Digital I/O" href="77502.htm"/>
+        <topic label="Display" href="15965.htm"/>
+        <topic label="Error queue" href="14748.htm"/>
+        <topic label="Event log" href="10905.htm"/>
+        <topic label="File I/O" href="14771.htm"/>
+        <topic label="GPIB" href="14859.htm"/>
+        <topic label="Instrument identification" href="19423.htm"/>
+        <topic label="LAN and LXI" href="14129.htm"/>
+        <topic label="Miscellaneous" href="19424.htm"/>
+        <topic label="Parallel script execution" href="19425.htm"/>
+        <topic label="Fast-pulse mode" href="92709.htm"/>
+        <topic label="Queries and response messages" href="14795.htm"/>
+        <topic label="Reading buffer" href="17112.htm"/>
+        <topic label="Reset" href="15061.htm"/>
+        <topic label="RS-232" href="15067.htm"/>
+        <topic label="Saved setups" href="19516.htm"/>
+        <topic label="Scripting" href="15062.htm"/>
+        <topic label="SMU" href="28523.htm"/>
+        <topic label="Status model" href="14126.htm"/>
+        <topic label="Time" href="19432.htm"/>
+        <topic label="Triggering" href="77503.htm"/>
+        <topic label="TSP-Link" href="77377.htm"/>
+        <topic label="TSP-Net" href="14072.htm"/>
+        <topic label="Userstrings" href="72522.htm"/>
+      </topic>
+      <topic label="Factory scripts" href="12911.htm">
+        <topic label="Running a factory script" href="12913.htm">
+          <topic label="Running a factory script function from the *** Set the virtual variable ***front-panel controls" href="12914.htm"/>
+        </topic>
+        <topic label="Retrieving and modifying a factory script listing" href="12194.htm"/>
+        <topic label="KISweep factory script" href="12175.htm"/>
+        <topic label="KIHighC factory script" href="12950.htm"/>
+        <topic label="KIParlib factory script" href="12954.htm"/>
+        <topic label="KISavebuffer factory script" href="12958.htm"/>
+      </topic>
+    </topic>
+    <topic label="TSP command reference" href="2601B-PULSE_TSP_command_reference.htm">
+      <topic label="TSP command programming notes" href="19536.htm">
+        <topic label="Placeholder text" href="92460.htm"/>
+        <topic label="Syntax rules" href="17860.htm"/>
+        <topic label="Time and date values" href="12044.htm"/>
+      </topic>
+      <topic label="Using the TSP command reference" href="17852.htm">
+        <topic label="Command name and summary table" href="17853.htm"/>
+        <topic label="Command usage" href="17854.htm"/>
+        <topic label="Command details" href="17855.htm"/>
+        <topic label="Example section" href="17856.htm"/>
+        <topic label="Related commands and information" href="17857.htm"/>
+      </topic>
+      <topic label="TSP commands" href="19389.htm">
+        <topic label="beeper.beep()" href="18841.htm"/>
+        <topic label="beeper.enable" href="14435.htm"/>
+        <topic label="bit.bitand()" href="14632.htm"/>
+        <topic label="bit.bitor()" href="14634.htm"/>
+        <topic label="bit.bitxor()" href="14635.htm"/>
+        <topic label="bit.clear()" href="14636.htm"/>
+        <topic label="bit.get()" href="14637.htm"/>
+        <topic label="bit.getfield()" href="14638.htm"/>
+        <topic label="bit.set()" href="14639.htm"/>
+        <topic label="bit.setfield()" href="14640.htm"/>
+        <topic label="bit.test()" href="14641.htm"/>
+        <topic label="bit.toggle()" href="14642.htm"/>
+        <topic label="bufferVar.appendmode" href="15127.htm"/>
+        <topic label="bufferVar.basetimestamp" href="15128.htm"/>
+        <topic label="bufferVar.cachemode" href="17109.htm"/>
+        <topic label="bufferVar.capacity" href="15129.htm"/>
+        <topic label="bufferVar.clear()" href="15130.htm"/>
+        <topic label="bufferVar.clearcache()" href="15131.htm"/>
+        <topic label="bufferVar.collectsourcevalues" href="15132.htm"/>
+        <topic label="bufferVar.collecttimestamps" href="15133.htm"/>
+        <topic label="bufferVar.fillcount" href="18551.htm"/>
+        <topic label="bufferVar.fillmode" href="18552.htm"/>
+        <topic label="bufferVar.measurefunctions" href="19914.htm"/>
+        <topic label="bufferVar.measureranges" href="19915.htm"/>
+        <topic label="bufferVar.n" href="15134.htm"/>
+        <topic label="bufferVar.readings" href="19920.htm"/>
+        <topic label="bufferVar.sourcefunctions" href="19916.htm"/>
+        <topic label="bufferVar.sourceoutputstates" href="19917.htm"/>
+        <topic label="bufferVar.sourceranges" href="19918.htm"/>
+        <topic label="bufferVar.sourcevalues" href="19919.htm"/>
+        <topic label="bufferVar.statuses" href="92702.htm"/>
+        <topic label="bufferVar.timestampresolution" href="15135.htm"/>
+        <topic label="bufferVar.timestamps" href="19922.htm"/>
+        <topic label="dataqueue.add()" href="14654.htm"/>
+        <topic label="dataqueue.CAPACITY" href="14656.htm"/>
+        <topic label="dataqueue.clear()" href="14655.htm"/>
+        <topic label="dataqueue.count" href="14657.htm"/>
+        <topic label="dataqueue.next()" href="14658.htm"/>
+        <topic label="delay()" href="13949.htm"/>
+        <topic label="digio.readbit()" href="14668.htm"/>
+        <topic label="digio.readport()" href="14669.htm"/>
+        <topic label="digio.trigger[N].assert()" href="14670.htm"/>
+        <topic label="digio.trigger[N].clear()" href="14671.htm"/>
+        <topic label="digio.trigger[N].EVENT_ID" href="14672.htm"/>
+        <topic label="digio.trigger[N].mode" href="14674.htm"/>
+        <topic label="digio.trigger[N].overrun" href="14675.htm"/>
+        <topic label="digio.trigger[N].pulsewidth" href="17691.htm"/>
+        <topic label="digio.trigger[N].release()" href="14677.htm"/>
+        <topic label="digio.trigger[N].reset()" href="17719.htm"/>
+        <topic label="digio.trigger[N].stimulus" href="26898.htm"/>
+        <topic label="digio.trigger[N].wait()" href="14679.htm"/>
+        <topic label="digio.writebit()" href="14680.htm"/>
+        <topic label="digio.writeport()" href="14681.htm"/>
+        <topic label="digio.writeprotect" href="14682.htm"/>
+        <topic label="display.clear()" href="14699.htm"/>
+        <topic label="display.getannunciators()" href="14719.htm"/>
+        <topic label="display.getcursor()" href="14700.htm"/>
+        <topic label="display.getlastkey()" href="92660.htm"/>
+        <topic label="display.gettext()" href="14702.htm"/>
+        <topic label="display.inputvalue()" href="14703.htm"/>
+        <topic label="display.loadmenu.add()" href="19382.htm"/>
+        <topic label="display.loadmenu.catalog()" href="14705.htm"/>
+        <topic label="display.loadmenu.delete()" href="14706.htm"/>
+        <topic label="display.locallockout" href="14707.htm"/>
+        <topic label="display.menu()" href="14708.htm"/>
+        <topic label="display.numpad" href="14709.htm"/>
+        <topic label="display.prompt()" href="14740.htm"/>
+        <topic label="display.screen" href="92282.htm"/>
+        <topic label="display.sendkey()" href="92659.htm"/>
+        <topic label="display.smua.digits" href="92073.htm"/>
+        <topic label="display.setcursor()" href="14711.htm"/>
+        <topic label="display.settext()" href="14712.htm"/>
+        <topic label="display.smua.limit.func" href="92074.htm"/>
+        <topic label="display.smua.measure.func" href="92075.htm"/>
+        <topic label="display.trigger.clear()" href="14715.htm"/>
+        <topic label="display.trigger.EVENT_ID" href="14716.htm"/>
+        <topic label="display.trigger.overrun" href="14739.htm"/>
+        <topic label="display.trigger.wait()" href="14717.htm"/>
+        <topic label="display.waitkey()" href="92661.htm"/>
+        <topic label="errorqueue.clear()" href="14749.htm"/>
+        <topic label="errorqueue.count" href="14750.htm"/>
+        <topic label="errorqueue.next()" href="92325.htm"/>
+        <topic label="eventlog.all()" href="14756.htm"/>
+        <topic label="eventlog.clear()" href="14758.htm"/>
+        <topic label="eventlog.count" href="14757.htm"/>
+        <topic label="eventlog.enable" href="14760.htm"/>
+        <topic label="eventlog.next()" href="14761.htm"/>
+        <topic label="eventlog.overwritemethod" href="14759.htm"/>
+        <topic label="exit()" href="14769.htm"/>
+        <topic label="fileVar:close()" href="14772.htm"/>
+        <topic label="fileVar:flush()" href="14786.htm"/>
+        <topic label="fileVar:read()" href="14787.htm"/>
+        <topic label="fileVar:seek()" href="14788.htm"/>
+        <topic label="fileVar:write()" href="14789.htm"/>
+        <topic label="format.asciiprecision" href="14797.htm"/>
+        <topic label="format.byteorder" href="14801.htm"/>
+        <topic label="format.data ***2600B***" href="14803.htm"/>
+        <topic label="fs.chdir()" href="14808.htm"/>
+        <topic label="fs.cwd()" href="14810.htm"/>
+        <topic label="fs.is_dir()" href="14811.htm"/>
+        <topic label="fs.is_file()" href="14824.htm"/>
+        <topic label="fs.mkdir()" href="14812.htm"/>
+        <topic label="fs.readdir()" href="14814.htm"/>
+        <topic label="fs.rmdir()" href="14815.htm"/>
+        <topic label="gettimezone()" href="15011.htm"/>
+        <topic label="gm_isweep()" href="12957.htm"/>
+        <topic label="gm_vsweep()" href="12955.htm"/>
+        <topic label="gpib.address" href="14860.htm"/>
+        <topic label="i_leakage_measure()" href="12951.htm"/>
+        <topic label="i_leakage_threshold()" href="12953.htm"/>
+        <topic label="io.close()" href="14868.htm"/>
+        <topic label="io.flush()" href="14870.htm"/>
+        <topic label="io.input()" href="66560.htm"/>
+        <topic label="io.open()" href="14872.htm"/>
+        <topic label="io.output()" href="14873.htm"/>
+        <topic label="io.read()" href="14874.htm"/>
+        <topic label="io.type()" href="14875.htm"/>
+        <topic label="io.write()" href="14877.htm"/>
+        <topic label="lan.applysettings()" href="14890.htm"/>
+        <topic label="lan.autoconnect" href="14891.htm"/>
+        <topic label="lan.config.dns.address[N]" href="14898.htm"/>
+        <topic label="lan.config.dns.domain" href="14899.htm"/>
+        <topic label="lan.config.dns.dynamic" href="14900.htm"/>
+        <topic label="lan.config.dns.hostname" href="66559.htm"/>
+        <topic label="lan.config.dns.verify" href="14902.htm"/>
+        <topic label="lan.config.duplex" href="14903.htm"/>
+        <topic label="lan.config.gateway" href="14904.htm"/>
+        <topic label="lan.config.ipaddress" href="14905.htm"/>
+        <topic label="lan.config.method" href="14906.htm"/>
+        <topic label="lan.config.speed" href="14907.htm"/>
+        <topic label="lan.config.subnetmask" href="14908.htm"/>
+        <topic label="lan.linktimeout" href="14892.htm"/>
+        <topic label="lan.lxidomain" href="14893.htm"/>
+        <topic label="lan.nagle" href="14894.htm"/>
+        <topic label="lan.reset()" href="14895.htm"/>
+        <topic label="lan.restoredefaults()" href="14896.htm"/>
+        <topic label="lan.status.dns.address[N]" href="14909.htm"/>
+        <topic label="lan.status.dns.name" href="14910.htm"/>
+        <topic label="lan.status.duplex" href="14911.htm"/>
+        <topic label="lan.status.gateway" href="14912.htm"/>
+        <topic label="lan.status.ipaddress" href="14913.htm"/>
+        <topic label="lan.status.macaddress" href="14914.htm"/>
+        <topic label="lan.status.port.dst" href="14915.htm"/>
+        <topic label="lan.status.port.rawsocket" href="14916.htm"/>
+        <topic label="lan.status.port.telnet" href="14917.htm"/>
+        <topic label="lan.status.port.vxi11" href="14918.htm"/>
+        <topic label="lan.status.speed" href="14919.htm"/>
+        <topic label="lan.status.subnetmask" href="14920.htm"/>
+        <topic label="lan.timedwait" href="14897.htm"/>
+        <topic label="lan.trigger[N].assert()" href="14921.htm"/>
+        <topic label="lan.trigger[N].clear()" href="14922.htm"/>
+        <topic label="lan.trigger[N].connect()" href="14923.htm"/>
+        <topic label="lan.trigger[N].connected" href="14924.htm"/>
+        <topic label="lan.trigger[N].disconnect()" href="14925.htm"/>
+        <topic label="lan.trigger[N].EVENT_ID" href="14926.htm"/>
+        <topic label="lan.trigger[N].ipaddress" href="14927.htm"/>
+        <topic label="lan.trigger[N].mode" href="14928.htm"/>
+        <topic label="lan.trigger[N].overrun" href="14929.htm"/>
+        <topic label="lan.trigger[N].protocol" href="14930.htm"/>
+        <topic label="lan.trigger[N].pseudostate" href="14931.htm"/>
+        <topic label="lan.trigger[N].stimulus" href="17679.htm"/>
+        <topic label="lan.trigger[N].wait()" href="14933.htm"/>
+        <topic label="localnode.autolinefreq" href="15007.htm"/>
+        <topic label="localnode.description" href="15008.htm"/>
+        <topic label="localnode.license" href="92667.htm"/>
+        <topic label="localnode.linefreq" href="15012.htm"/>
+        <topic label="localnode.model" href="92703.htm"/>
+        <topic label="localnode.password" href="15014.htm"/>
+        <topic label="localnode.passwordmode" href="15015.htm"/>
+        <topic label="localnode.prompts" href="15016.htm"/>
+        <topic label="localnode.prompts4882" href="15017.htm"/>
+        <topic label="localnode.reset()" href="16978.htm"/>
+        <topic label="localnode.revision" href="15018.htm"/>
+        <topic label="localnode.serialno" href="15019.htm"/>
+        <topic label="localnode.showerrors" href="15022.htm"/>
+        <topic label="makegetter()" href="15041.htm"/>
+        <topic label="makesetter()" href="15042.htm"/>
+        <topic label="meminfo()" href="15050.htm"/>
+        <topic label="node[N].execute()" href="29213.htm"/>
+        <topic label="node[N].getglobal()" href="15010.htm"/>
+        <topic label="node[N].setglobal()" href="15020.htm"/>
+        <topic label="opc()" href="15054.htm"/>
+        <topic label="os.remove()" href="19929.htm"/>
+        <topic label="os.rename()" href="19930.htm"/>
+        <topic label="os.time()" href="25959.htm"/>
+        <topic label="print()" href="17645.htm"/>
+        <topic label="printbuffer()" href="80596.htm"/>
+        <topic label="printnumber()" href="15058.htm"/>
+        <topic label="reset()" href="13933.htm"/>
+        <topic label="savebuffer()" href="12959.htm"/>
+        <topic label="script.anonymous" href="17040.htm"/>
+        <topic label="script.delete()" href="16853.htm"/>
+        <topic label="script.factory.catalog()" href="19931.htm"/>
+        <topic label="script.load()" href="15063.htm"/>
+        <topic label="script.new()" href="15064.htm"/>
+        <topic label="script.newautorun()" href="18832.htm"/>
+        <topic label="script.restore()" href="16851.htm"/>
+        <topic label="script.run()" href="18833.htm"/>
+        <topic label="script.user.catalog()" href="16862.htm"/>
+        <topic label="scriptVar.autorun" href="16852.htm"/>
+        <topic label="scriptVar.list()" href="17785.htm"/>
+        <topic label="scriptVar.name" href="2589.htm"/>
+        <topic label="scriptVar.run()" href="16856.htm"/>
+        <topic label="scriptVar.save()" href="16863.htm"/>
+        <topic label="scriptVar.source" href="16867.htm"/>
+        <topic label="serial.baud" href="15068.htm"/>
+        <topic label="serial.databits" href="15069.htm"/>
+        <topic label="serial.flowcontrol" href="15070.htm"/>
+        <topic label="serial.parity" href="15071.htm"/>
+        <topic label="serial.read()" href="15072.htm"/>
+        <topic label="serial.write()" href="15073.htm"/>
+        <topic label="settime()" href="13943.htm"/>
+        <topic label="settimezone()" href="15021.htm"/>
+        <topic label="setup.poweron" href="15081.htm"/>
+        <topic label="setup.recall()" href="66566.htm"/>
+        <topic label="setup.save()" href="15083.htm"/>
+        <topic label="***Set smux variable***.abort()" href="15088.htm"/>
+        <topic label="***Set smux variable***.buffer.getstats()" href="18554.htm"/>
+        <topic label="***Set smux variable***.buffer.recalculatestats()" href="18556.htm"/>
+        <topic label="***Set smux variable***.cal.adjustdate" href="15093.htm"/>
+        <topic label="***Set smux variable***.cal.date" href="15094.htm"/>
+        <topic label="***Set smux variable***.cal.due" href="15095.htm"/>
+        <topic label="***Set smux variable***.cal.lock()" href="15089.htm"/>
+        <topic label="***Set smux variable***.cal.password" href="15096.htm"/>
+        <topic label="***Set smux variable***.cal.polarity" href="15097.htm"/>
+        <topic label="***Set smux variable***.cal.restore()" href="15090.htm"/>
+        <topic label="***Set smux variable***.cal.save()" href="15091.htm"/>
+        <topic label="***Set smux variable***.cal.state" href="15098.htm"/>
+        <topic label="***Set smux variable***.cal.unlock()" href="15092.htm"/>
+        <topic label="***Set smux variable***.contact.calibratehi()" href="15099.htm"/>
+        <topic label="***Set smux variable***.contact.calibratelo()" href="15100.htm"/>
+        <topic label="***Set smux variable***.contact.check()" href="92517.htm"/>
+        <topic label="***Set smux variable***.contact.r()" href="15102.htm"/>
+        <topic label="smua.contact.r()" href="92712.htm"/>
+        <topic label="smua.contact.speed" href="92519.htm"/>
+        <topic label="smua.contact.threshold" href="92520.htm"/>
+        <topic label="smua.interlock.enable" href="92713.htm"/>
+        <topic label="***Set smux variable***.makebuffer()" href="15105.htm"/>
+        <topic label="***Set smux variable***.measure.autorangeY" href="15107.htm"/>
+        <topic label="***Set smux variable***.measure.autozero" href="15108.htm"/>
+        <topic label="***Set smux variable***.measure.calibrateY()" href="15109.htm"/>
+        <topic label="***Set smux variable***.measure.count" href="77107.htm"/>
+        <topic label="smua.measure.delay" href="92241.htm"/>
+        <topic label="***Set smux variable***.measure.delayfactor" href="15112.htm"/>
+        <topic label="***Set smux variable***.measure.filter.count" href="15113.htm"/>
+        <topic label="***Set smux variable***.measure.filter.enable" href="15114.htm"/>
+        <topic label="***Set smux variable***.measure.filter.type" href="15115.htm"/>
+        <topic label="***Set smux variable***.measure.highcrangedelayfactor" href="15116.htm"/>
+        <topic label="***Set smux variable***.measure.interval" href="15117.htm"/>
+        <topic label="***Set smux variable***.measure.lowrangeY" href="92333.htm"/>
+        <topic label="***Set smux variable***.measure.nplc" href="15119.htm"/>
+        <topic label="***Set smux variable***.measure.overlappedY()" href="15120.htm"/>
+        <topic label="***Set smux variable***.measure.rangeY" href="92317.htm"/>
+        <topic label="***Set smux variable***.measure.rel.enableY" href="15123.htm"/>
+        <topic label="***Set smux variable***.measure.rel.levelY" href="15124.htm"/>
+        <topic label="***Set smux variable***.measure.Y()" href="15122.htm"/>
+        <topic label="***Set smux variable***.measureYandstep()" href="15125.htm"/>
+        <topic label="***Set smux variable***.nvbufferY ***2601B-PULSE***" href="92706.htm"/>
+        <topic label="smua.pulser.enable" href="91674.htm"/>
+        <topic label="smua.pulser.measure.aperture" href="91672.htm"/>
+        <topic label="smua.pulser.measure.calibrateY()" href="91895.htm"/>
+        <topic label="smua.pulser.measure.delay" href="91673.htm"/>
+        <topic label="smua.pulser.protect.sensev" href="91675.htm"/>
+        <topic label="smua.pulser.protect.sourcev" href="92539.htm"/>
+        <topic label="smua.pulser.protect.tripped" href="91676.htm"/>
+        <topic label="smua.pulser.rangeY" href="91677.htm"/>
+        <topic label="smua.pulser.source.calibratebiasi()" href="91897.htm"/>
+        <topic label="smua.pulser.source.calibratei()" href="91898.htm"/>
+        <topic label="***Set smux variable***.reset()" href="15136.htm"/>
+        <topic label="***Set smux variable***.savebuffer()" href="15137.htm"/>
+        <topic label="***Set smux variable***.sense" href="15138.htm"/>
+        <topic label="***Set smux variable***.source.autorangeY" href="15139.htm"/>
+        <topic label="***Set smux variable***.source.calibrateY()" href="15143.htm"/>
+        <topic label="***Set smux variable***.source.compliance" href="15141.htm"/>
+        <topic label="***Set smux variable***.source.delay" href="15142.htm"/>
+        <topic label="***Set smux variable***.source.func" href="15144.htm"/>
+        <topic label="***Set smux variable***.source.highc" href="15145.htm"/>
+        <topic label="smua.source.levelY" href="92361.htm"/>
+        <topic label="smua.source.limitY" href="92359.htm"/>
+        <topic label="smua.source.lowrangeY" href="92358.htm"/>
+        <topic label="***Set smux variable***.source.offfunc" href="92715.htm"/>
+        <topic label="***Set smux variable***.source.offlimitY" href="15149.htm"/>
+        <topic label="smua.source.offmode" href="92521.htm"/>
+        <topic label="***Set smux variable***.source.output" href="15151.htm"/>
+        <topic label="***Set smux variable***.source.rangeY" href="92312.htm"/>
+        <topic label="smua.source.settling" href="92343.htm"/>
+        <topic label="***Set smux variable***.source.sink" href="15155.htm"/>
+        <topic label="***Set smux variable***.trigger.arm.count" href="15156.htm"/>
+        <topic label="***Set smux variable***.trigger.arm.set()" href="15157.htm"/>
+        <topic label="***Set smux variable***.trigger.arm.stimulus" href="15158.htm"/>
+        <topic label="***Set smux variable***.trigger.ARMED_EVENT_ID" href="15159.htm"/>
+        <topic label="***Set smux variable***.trigger.autoclear" href="15160.htm"/>
+        <topic label="***Set smux variable***.trigger.count" href="15161.htm"/>
+        <topic label="smua.trigger.endpulse.action" href="92540.htm"/>
+        <topic label="***Set smux variable***.trigger.endpulse.set()" href="15163.htm"/>
+        <topic label="***Set smux variable***.trigger.endpulse.stimulus" href="15165.htm"/>
+        <topic label="***Set smux variable***.trigger.endsweep.action" href="15166.htm"/>
+        <topic label="***Set smux variable***.trigger.IDLE_EVENT_ID" href="15167.htm"/>
+        <topic label="***Set smux variable***.trigger.initiate()" href="15168.htm"/>
+        <topic label="***Set smux variable***.trigger.measure.action" href="15169.htm"/>
+        <topic label="***Set smux variable***.trigger.measure.set()" href="15170.htm"/>
+        <topic label="***Set smux variable***.trigger.measure.stimulus" href="15171.htm"/>
+        <topic label="***Set smux variable***.trigger.measure.Y()" href="15172.htm"/>
+        <topic label="***Set smux variable***.trigger.MEASURE_COMPLETE_EVENT_ID" href="15173.htm"/>
+        <topic label="***Set smux variable***.trigger.PULSE_COMPLETE_EVENT_ID" href="15174.htm"/>
+        <topic label="***Set smux variable***.trigger.source.action" href="15178.htm"/>
+        <topic label="***Set smux variable***.trigger.source.limitY" href="15179.htm"/>
+        <topic label="***Set smux variable***.trigger.source.linearY()" href="15180.htm"/>
+        <topic label="***Set smux variable***.trigger.source.listY()" href="15181.htm"/>
+        <topic label="***Set smux variable***.trigger.source.logY()" href="15182.htm"/>
+        <topic label="smua.trigger.source.pulsewidth" href="91678.htm"/>
+        <topic label="***Set smux variable***.trigger.source.set()" href="15183.htm"/>
+        <topic label="***Set smux variable***.trigger.source.stimulus" href="15184.htm"/>
+        <topic label="***Set smux variable***.trigger.SOURCE_COMPLETE_EVENT_ID" href="15175.htm"/>
+        <topic label="***Set smux variable***.trigger.SWEEP_COMPLETE_EVENT_ID" href="15176.htm"/>
+        <topic label="***Set smux variable***.trigger.SWEEPING_EVENT_ID" href="15177.htm"/>
+        <topic label="status.condition" href="29255.htm"/>
+        <topic label="status.measurement.*" href="92390.htm"/>
+        <topic label="status.measurement.buffer_available.*" href="27146.htm"/>
+        <topic label="status.measurement.current_limit.*" href="27165.htm"/>
+        <topic label="status.measurement.instrument.*" href="27167.htm"/>
+        <topic label="status.measurement.instrument.***Set smux variable***.*" href="92690.htm"/>
+        <topic label="status.measurement.protection.*" href="92743.htm"/>
+        <topic label="status.measurement.reading_overflow.*" href="27169.htm"/>
+        <topic label="status.measurement.voltage_limit.*" href="27887.htm"/>
+        <topic label="status.node_enable" href="15830.htm"/>
+        <topic label="status.node_event" href="15831.htm"/>
+        <topic label="status.operation.*" href="15833.htm"/>
+        <topic label="status.operation.calibrating.*" href="27170.htm"/>
+        <topic label="status.operation.instrument.*" href="27207.htm"/>
+        <topic label="status.operation.instrument.digio.*" href="15836.htm"/>
+        <topic label="status.operation.instrument.digio.trigger_overrun.*" href="15837.htm"/>
+        <topic label="status.operation.instrument.lan.*" href="15838.htm"/>
+        <topic label="status.operation.instrument.lan.trigger_overrun.*" href="15839.htm"/>
+        <topic label="status.operation.instrument.***Set smux variable***.*" href="15840.htm"/>
+        <topic label="status.operation.instrument.***Set smux variable***.trigger_overrrun.*" href="15841.htm"/>
+        <topic label="status.operation.instrument.trigger_blender.*" href="15842.htm"/>
+        <topic label="status.operation.instrument.trigger_blender.trigger_overrun.*" href="29234.htm"/>
+        <topic label="status.operation.instrument.trigger_timer.*" href="15844.htm"/>
+        <topic label="status.operation.instrument.trigger_timer.trigger_overrun.*" href="15845.htm"/>
+        <topic label="status.operation.instrument.tsplink.*" href="15846.htm"/>
+        <topic label="status.operation.instrument.tsplink.trigger_overrun.*" href="15847.htm"/>
+        <topic label="status.operation.measuring.*" href="27208.htm"/>
+        <topic label="status.operation.remote.*" href="15849.htm"/>
+        <topic label="status.operation.sweeping.*" href="27209.htm"/>
+        <topic label="status.operation.trigger_overrun.*" href="27210.htm"/>
+        <topic label="status.operation.user.*" href="15852.htm"/>
+        <topic label="status.questionable.*" href="92683.htm"/>
+        <topic label="status.questionable.calibration.*" href="27211.htm"/>
+        <topic label="status.questionable.instrument.*" href="27212.htm"/>
+        <topic label="status.questionable.instrument.***Set smux variable***.*" href="92697.htm"/>
+        <topic label="status.questionable.over_temperature.*" href="27213.htm"/>
+        <topic label="status.questionable.unstable_output.*" href="15858.htm"/>
+        <topic label="status.request_enable" href="92663.htm"/>
+        <topic label="status.request_event" href="92664.htm"/>
+        <topic label="status.reset()" href="15861.htm"/>
+        <topic label="status.standard.*" href="15862.htm"/>
+        <topic label="status.system.*" href="15863.htm"/>
+        <topic label="status.system2.*" href="15864.htm"/>
+        <topic label="status.system3.*" href="15865.htm"/>
+        <topic label="status.system4.*" href="15866.htm"/>
+        <topic label="status.system5.*" href="15867.htm"/>
+        <topic label="SweepILinMeasureV()" href="12177.htm"/>
+        <topic label="SweepIListMeasureV()" href="12190.htm"/>
+        <topic label="SweepILogMeasureV()" href="12184.htm"/>
+        <topic label="SweepVLinMeasureI()" href="12181.htm"/>
+        <topic label="SweepVListMeasureI()" href="19138.htm"/>
+        <topic label="SweepVLogMeasureI()" href="12192.htm"/>
+        <topic label="timer.measure.t()" href="15281.htm"/>
+        <topic label="timer.reset()" href="15282.htm"/>
+        <topic label="trigger.blender[N].clear()" href="15785.htm"/>
+        <topic label="trigger.blender[N].EVENT_ID" href="15786.htm"/>
+        <topic label="trigger.blender[N].orenable" href="15787.htm"/>
+        <topic label="trigger.blender[N].overrun" href="15788.htm"/>
+        <topic label="trigger.blender[N].reset()" href="17666.htm"/>
+        <topic label="trigger.blender[N].stimulus[M]" href="17684.htm"/>
+        <topic label="trigger.blender[N].wait()" href="15790.htm"/>
+        <topic label="trigger.clear()" href="15791.htm"/>
+        <topic label="trigger.EVENT_ID" href="15792.htm"/>
+        <topic label="trigger.generator[N].assert()" href="29218.htm"/>
+        <topic label="trigger.generator[N].EVENT_ID" href="29219.htm"/>
+        <topic label="trigger.timer[N].clear()" href="15793.htm"/>
+        <topic label="trigger.timer[N].count" href="15820.htm"/>
+        <topic label="trigger.timer[N].delay" href="15794.htm"/>
+        <topic label="trigger.timer[N].delaylist" href="15795.htm"/>
+        <topic label="trigger.timer[N].EVENT_ID" href="15796.htm"/>
+        <topic label="trigger.timer[N].overrun" href="15797.htm"/>
+        <topic label="trigger.timer[N].passthrough" href="15798.htm"/>
+        <topic label="trigger.timer[N].reset()" href="17668.htm"/>
+        <topic label="trigger.timer[N].stimulus" href="17688.htm"/>
+        <topic label="trigger.timer[N].wait()" href="15800.htm"/>
+        <topic label="trigger.wait()" href="15801.htm"/>
+        <topic label="tsplink.group" href="15285.htm"/>
+        <topic label="tsplink.master" href="15286.htm"/>
+        <topic label="tsplink.node" href="15287.htm"/>
+        <topic label="tsplink.readbit()" href="15288.htm"/>
+        <topic label="tsplink.readport()" href="15289.htm"/>
+        <topic label="tsplink.reset()" href="15290.htm"/>
+        <topic label="tsplink.state" href="15291.htm"/>
+        <topic label="tsplink.trigger[N].assert()" href="15292.htm"/>
+        <topic label="tsplink.trigger[N].clear()" href="15293.htm"/>
+        <topic label="tsplink.trigger[N].EVENT_ID" href="15294.htm"/>
+        <topic label="tsplink.trigger[N].mode" href="15295.htm"/>
+        <topic label="tsplink.trigger[N].overrun" href="15296.htm"/>
+        <topic label="tsplink.trigger[N].pulsewidth" href="15297.htm"/>
+        <topic label="tsplink.trigger[N].release()" href="15298.htm"/>
+        <topic label="tsplink.trigger[N].reset()" href="17669.htm"/>
+        <topic label="tsplink.trigger[N].stimulus" href="17682.htm"/>
+        <topic label="tsplink.trigger[N].wait()" href="15300.htm"/>
+        <topic label="tsplink.writebit()" href="15301.htm"/>
+        <topic label="tsplink.writeport()" href="15302.htm"/>
+        <topic label="tsplink.writeprotect" href="17630.htm"/>
+        <topic label="tspnet.clear()" href="14073.htm"/>
+        <topic label="tspnet.connect()" href="14074.htm"/>
+        <topic label="tspnet.disconnect()" href="14076.htm"/>
+        <topic label="tspnet.execute()" href="14077.htm"/>
+        <topic label="tspnet.idn()" href="14078.htm"/>
+        <topic label="tspnet.read()" href="14079.htm"/>
+        <topic label="tspnet.readavailable()" href="14080.htm"/>
+        <topic label="tspnet.reset()" href="14081.htm"/>
+        <topic label="tspnet.termination()" href="14082.htm"/>
+        <topic label="tspnet.timeout" href="14084.htm"/>
+        <topic label="tspnet.tsp.abort()" href="14085.htm"/>
+        <topic label="tspnet.tsp.abortonconnect" href="14086.htm"/>
+        <topic label="tspnet.tsp.rbtablecopy()" href="14090.htm"/>
+        <topic label="tspnet.tsp.runscript()" href="15280.htm"/>
+        <topic label="tspnet.write()" href="14089.htm"/>
+        <topic label="userstring.add()" href="13987.htm"/>
+        <topic label="userstring.catalog()" href="13988.htm"/>
+        <topic label="userstring.delete()" href="13989.htm"/>
+        <topic label="userstring.get()" href="13990.htm"/>
+        <topic label="waitcomplete()" href="13986.htm"/>
+      </topic>
+    </topic>
+    <topic label="Additional information" href="19582.htm">
+      <topic label="2-wire local sensing connections" href="19568.htm"/>
+      <topic label="4-wire remote sensing connections" href="19569.htm"/>
+      <topic label="Adjustment" href="19563.htm"/>
+      <topic label="Analog-to-digital converter" href="18560.htm"/>
+      <topic label="Autozero" href="11440.htm"/>
+      <topic label="Base library functions" href="2430.htm"/>
+      <topic label="Calibration" href="19570.htm"/>
+      <topic label="Capturing key-press codes" href="12125.htm"/>
+      <topic label="Configuring and running sweeps" href="19567.htm"/>
+      <topic label="Contact check connections" href="19564.htm"/>
+      <topic label="Contact check measurements" href="19565.htm"/>
+      <topic label="Controlling digital I/O lines" href="11274.htm"/>
+      <topic label="Create a script using the script.new() command" href="19556.htm"/>
+      <topic label="Delete user scripts" href="16805.htm"/>
+      <topic label="Delete user scripts from the instrument" href="2408.htm"/>
+      <topic label="Digital I/O" href="19553.htm"/>
+      <topic label="Digital I/O bit weighting" href="11500.htm"/>
+      <topic label="Digital I/O port" href="1401.htm"/>
+      <topic label="DUT test connections" href="19573.htm"/>
+      <topic label="Filters" href="11532.htm"/>
+      <topic label="Global variables and the script.user.scripts table" href="19557.htm"/>
+      <topic label="GPIB setup" href="24524.htm"/>
+      <topic label="High-capacitance mode" href="19566.htm"/>
+      <topic label="Load a script by sending commands over the remote interface" href="19559.htm"/>
+      <topic label="Logical operators" href="12893.htm"/>
+      <topic label="Measure auto delay" href="19632.htm"/>
+      <topic label="Measurement event registers" href="19571.htm"/>
+      <topic label="Named scripts" href="19558.htm"/>
+      <topic label="Operation Status Registers" href="19578.htm"/>
+      <topic label="Output-off states" href="15424.htm"/>
+      <topic label="Questionable Status Registers" href="19579.htm"/>
+      <topic label="Queues" href="19552.htm"/>
+      <topic label="Range" href="11993.htm"/>
+      <topic label="Overview" href="13629.htm"/>
+      <topic label="Relative offset" href="12001.htm"/>
+      <topic label="Remote reading buffer programming" href="11655.htm"/>
+      <topic label="Removing stale values from the reading buffer cache" href="3249.htm"/>
+      <topic label="Rename a script" href="19560.htm"/>
+      <topic label="Retrieve source code one line at a time" href="17030.htm"/>
+      <topic label="RS-232 interface operation" href="19561.htm"/>
+      <topic label="Save a user script" href="16803.htm"/>
+      <topic label="Saved setups" href="19562.htm"/>
+      <topic label="Sense mode selection" href="11848.htm"/>
+      <topic label="Setting a value" href="29272.htm"/>
+      <topic label="Source or sink" href="11584.htm"/>
+      <topic label="Source-measure concepts" href="19572.htm"/>
+      <topic label="Speed" href="11998.htm"/>
+      <topic label="Standard Event Register" href="19580.htm"/>
+      <topic label="Start-up (power-on) configuration" href="11613.htm"/>
+      <topic label="Status byte and service request (SRQ)" href="19576.htm"/>
+      <topic label="Status model" href="19551.htm"/>
+      <topic label="Status model overview" href="19575.htm"/>
+      <topic label="Sweep operation" href="19550.htm"/>
+      <topic label="System summary and standard event registers" href="19581.htm"/>
+      <topic label="Triggering" href="19574.htm"/>
+      <topic label="TSP advanced features" href="19555.htm"/>
+      <topic label="TSP-Link" href="19554.htm"/>
+      <topic label="TSP-Link trigger lines" href="12458.htm"/>
+    </topic>
+  </topic>
+</toc>
